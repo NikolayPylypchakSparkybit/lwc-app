@@ -1,0 +1,18 @@
+<template>
+    <div title="HelloBinding">
+        <div>
+            <p>Hello, {greeting}!</p>
+            <input
+                label="Name"
+                value={greeting}
+                onchange={handleChange}
+            ></input>
+        </div>
+
+        <my-view-source source="my/helloBinding" slot="footer">
+            Change the value of a bound property when the value of an input
+            field changes. Type something in the input field to see the recipe
+            in action.
+        </my-view-source>
+    </div>
+</template>
